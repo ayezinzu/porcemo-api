@@ -1,6 +1,6 @@
 import client from "./api";
 
-export const getVacancies = async (pageSize = 10, pageNumber = 1) => {
+export const getVacancies = async (pageSize = 1000, pageNumber = 1) => {
   try {
     const response = await client.get("/vacancies", {
       params: {
